@@ -16,6 +16,11 @@ gem 'jquery-easing-rails'
 gem 'hamlit'
 gem 'less-rails', '~> 2.7.0'
 
+gem "decent_exposure"
+gem "decent_decoration"
+gem 'email_validator'
+
 group :development do
   gem 'listen', '~> 3.0.5'
+  gem 'letter_opener'
 end
