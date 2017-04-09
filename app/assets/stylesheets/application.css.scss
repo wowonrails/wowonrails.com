@@ -1,6 +1,9 @@
 /*
- *= require bootstrap.min.css
+ *= require_tree ./less
  *= require freelancer.min.css
  *= require font-awesome
  *= require_self
  */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
