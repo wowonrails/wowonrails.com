@@ -1,10 +1,10 @@
 class ContactForm
   include ActiveModel::Model
 
-  attr_reader :email,
-              :phone,
-              :name,
-              :message
+  attr_accessor :email,
+                :phone,
+                :name,
+                :message
 
   validates :email, presence: true, email: true
 

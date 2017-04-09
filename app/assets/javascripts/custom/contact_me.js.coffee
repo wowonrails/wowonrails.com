@@ -60,3 +60,8 @@ window.ContactMe =
     $('#name').focus ->
       $('#success').html ''
       return
+
+  clean_up: () ->
+    $(".new_contact_form input").val("")
+    $(".new_contact_form textarea").val("")
+    $(".js-contact-success-message").removeClass('hidden')
