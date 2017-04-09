@@ -10,6 +10,7 @@ gem 'coffee-rails', '~> 4.2'
 gem 'therubyracer', platforms: :ruby
 gem 'jquery-rails'
 gem 'slim-rails'
+gem "font-awesome-rails"
 
 group :development do
   gem 'listen', '~> 3.0.5'
