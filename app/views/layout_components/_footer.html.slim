@@ -6,10 +6,11 @@ footer.text-center
         .footer-col.col-md-4
           h3 Location
           p
-            | 3481 Melrose Place
-            = succeed "Beverly" do
-              br/
-            | Hills, CA 90210
+            | Zavoisky '11
+            br
+            | Kazan - 420029
+            br
+            | Russia, Republic of Tatarstan
         .footer-col.col-md-4
           h3 Around the Web
           ul.list-inline
@@ -36,11 +37,14 @@ footer.text-center
         .footer-col.col-md-4
           h3 About Freelancer
           p
-            | Freelance is a free to use, open source Bootstrap theme created by
-            = succeed "." do
-              a href="http://startbootstrap.com"  Start Bootstrap
+            | To get more information about me
+
+            =<> link_to "/cv.pdf", class: "btn btn-lg btn-outline", target: "_blank" do
+              | Download My CV
+
+
   .footer-below
     .container
       .row
         .col-lg-12
-          | Copyright &copy; Your Website 2016
+          | Copyright &copy; WOWONRAILS.COM 2017

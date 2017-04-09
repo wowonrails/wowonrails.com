@@ -7,14 +7,18 @@ nav#mainNav.navbar.navbar-default.navbar-fixed-top.navbar-custom
         span.sr-only Toggle navigation
         | Menu
         i.fa.fa-bars
-      a.navbar-brand href="#page-top"  Start Bootstrap
+      a.navbar-brand href="#page-top" Ruby On Rails Developer
     /! Collect the nav links, forms, and other content for toggling
     #bs-example-navbar-collapse-1.collapse.navbar-collapse
       ul.nav.navbar-nav.navbar-right
         li.hidden
           a href="#page-top"
-        li.page-scroll
-          a href="#portfolio"  Portfolio
+        li
+          = link_to "/cv.pdf", class: "btn btn-outline download-my-cv", target: "_blank" do
+            i.fa.fa-download
+            | Download My CV
+        / li.page-scroll
+        /   a href="#portfolio"  Portfolio
         li.page-scroll
           a href="#about"  About
         li.page-scroll
