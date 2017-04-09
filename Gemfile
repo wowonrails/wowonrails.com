@@ -14,6 +14,7 @@ gem 'slim-rails'
 gem "font-awesome-rails"
 gem 'jquery-easing-rails'
 gem 'hamlit'
+gem 'less-rails', '~> 2.7.0'
 
 group :development do
   gem 'listen', '~> 3.0.5'
