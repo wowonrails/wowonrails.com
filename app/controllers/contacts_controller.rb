@@ -1,9 +1,18 @@
 class ContactsController < ApplicationController
   expose(:contact_form) do
-    ContactForm.new(params)
+    ContactForm.new(contact_params)
   end
 
   def create
-    ContactMailer.notify(params).deliver! if contact_form.valid?
+    contact_form.notify! if contact_form.valid?
+  end
+
+  def contact_params
+    params.require(:contact).permit(
+      :name,
+      :email,
+      :phone,
+      :message
+    )
   end
 end

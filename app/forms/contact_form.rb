@@ -17,4 +17,8 @@ class ContactForm
   validates :message,
             presence: true,
             length: { in: 1..1000 }
+
+  def notify!
+    ContactMailer.notify(name, email, phone, message).deliver!
+  end
 end
