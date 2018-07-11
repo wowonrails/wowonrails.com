@@ -7,6 +7,8 @@ class ContactsController < ApplicationController
     contact_form.notify! if contact_form.valid?
   end
 
+  private
+
   def contact_params
     params.require(:contact).permit(
       :name,
